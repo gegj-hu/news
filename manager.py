@@ -26,3 +26,4 @@ db = SQLAlchemy(app)
 #基本配置存储方式
 redis_store = StrictRedis(host=Config.REDIS_HOST,port=Config.REDIS_PORT)
 CSRFProtect(app)
+Session(app)
